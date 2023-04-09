@@ -1,0 +1,10 @@
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\bin\Debug\STUDENTS MANAGMENT SYSTEM 2.exe.config
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\bin\Debug\STUDENTS MANAGMENT SYSTEM 2.exe
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\bin\Debug\STUDENTS MANAGMENT SYSTEM 2.pdb
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\obj\Debug\STUDENTS MANAGMENT SYSTEM 2.csproj.AssemblyReference.cache
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\obj\Debug\STUDENTS_MANAGMENT_SYSTEM_2.login.resources
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\obj\Debug\STUDENTS_MANAGMENT_SYSTEM_2.Properties.Resources.resources
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\obj\Debug\STUDENTS MANAGMENT SYSTEM 2.csproj.GenerateResource.cache
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\obj\Debug\STUDENTS MANAGMENT SYSTEM 2.csproj.CoreCompileInputs.cache
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\obj\Debug\STUDENTS MANAGMENT SYSTEM 2.exe
+C:\Users\Safaa Alngrees\source\repos\STUDENTS MANAGMENT SYSTEM 2\obj\Debug\STUDENTS MANAGMENT SYSTEM 2.pdb
