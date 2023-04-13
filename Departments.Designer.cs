@@ -1,7 +1,7 @@
 ﻿
 namespace student_managment_system
 {
-    partial class students
+    partial class Departments
     {
         /// <summary>
         /// Required designer variable.
@@ -30,21 +30,21 @@ namespace student_managment_system
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(students));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Departments));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,15 +53,7 @@ namespace student_managment_system
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -106,12 +98,14 @@ namespace student_managment_system
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -122,49 +116,70 @@ namespace student_managment_system
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(-10, -2);
+            this.panel1.Location = new System.Drawing.Point(8, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1920, 817);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(1920, 783);
+            this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(112, 696);
+            this.label24.Location = new System.Drawing.Point(92, 10);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(67, 21);
+            this.label24.Size = new System.Drawing.Size(78, 24);
             this.label24.TabIndex = 32;
             this.label24.Text = "Logout";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(39, 183);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(51, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 25;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.White;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(39, 690);
+            this.pictureBox9.Location = new System.Drawing.Point(11, 3);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(67, 36);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 31;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(108, 193);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 21);
+            this.label21.TabIndex = 27;
+            this.label21.Text = "Students";
             // 
             // label23
             // 
@@ -188,38 +203,14 @@ namespace student_managment_system
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 29;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(104, 262);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(116, 21);
-            this.label22.TabIndex = 28;
-            this.label22.Text = "Departments";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(39, 254);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(44, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 27;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.LightGray;
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Controls.Add(this.label21);
-            this.panel6.Location = new System.Drawing.Point(12, 190);
+            this.panel6.Controls.Add(this.label22);
+            this.panel6.Controls.Add(this.pictureBox7);
+            this.panel6.Location = new System.Drawing.Point(12, 245);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(268, 38);
             this.panel6.TabIndex = 25;
@@ -231,41 +222,39 @@ namespace student_managment_system
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(18, 38);
             this.panel7.TabIndex = 25;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
-            // pictureBox6
+            // label22
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(27, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(51, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 25;
-            this.pictureBox6.TabStop = false;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(92, 14);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(116, 21);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "Departments";
             // 
-            // label21
+            // pictureBox7
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(100, 7);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(79, 21);
-            this.label21.TabIndex = 27;
-            this.label21.Text = "Student ";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(27, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(44, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 27;
+            this.pictureBox7.TabStop = false;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(75, 99);
+            this.label20.Location = new System.Drawing.Point(51, 99);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(127, 24);
+            this.label20.Size = new System.Drawing.Size(169, 24);
             this.label20.TabIndex = 25;
-            this.label20.Text = "Student M.S";
+            this.label20.Text = "Department M.S";
             // 
             // pictureBox5
             // 
@@ -289,9 +278,8 @@ namespace student_managment_system
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(286, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1634, 817);
+            this.panel2.Size = new System.Drawing.Size(1634, 783);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
             // panel5
             // 
@@ -300,15 +288,7 @@ namespace student_managment_system
             this.panel5.Controls.Add(this.button7);
             this.panel5.Controls.Add(this.button8);
             this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.textBox9);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.comboBox5);
-            this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.textBox10);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.textBox11);
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.comboBox6);
             this.panel5.Controls.Add(this.label18);
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.textBox12);
@@ -316,13 +296,14 @@ namespace student_managment_system
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(440, 713);
             this.panel5.TabIndex = 24;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(170, 21);
+            this.pictureBox4.Location = new System.Drawing.Point(130, 33);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 66);
+            this.pictureBox4.Size = new System.Drawing.Size(144, 76);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
@@ -332,7 +313,7 @@ namespace student_managment_system
             this.button7.BackColor = System.Drawing.Color.LightCoral;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(127, 643);
+            this.button7.Location = new System.Drawing.Point(130, 502);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(189, 34);
             this.button7.TabIndex = 22;
@@ -344,7 +325,7 @@ namespace student_managment_system
             this.button8.BackColor = System.Drawing.Color.DarkCyan;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(224, 603);
+            this.button8.Location = new System.Drawing.Point(224, 446);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(191, 34);
             this.button8.TabIndex = 21;
@@ -356,131 +337,50 @@ namespace student_managment_system
             this.button9.BackColor = System.Drawing.Color.DarkCyan;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(23, 603);
+            this.button9.Location = new System.Drawing.Point(15, 446);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(186, 34);
             this.button9.TabIndex = 20;
             this.button9.Text = "Add";
             this.button9.UseVisualStyleBackColor = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox9.Location = new System.Drawing.Point(18, 364);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(321, 25);
-            this.textBox9.TabIndex = 19;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(19, 340);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(137, 21);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Student Parent ";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.BackColor = System.Drawing.Color.LightGray;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(18, 560);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(321, 24);
-            this.comboBox5.TabIndex = 17;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(21, 536);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(177, 21);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Student Department";
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox10.Location = new System.Drawing.Point(18, 443);
+            this.textBox10.Location = new System.Drawing.Point(16, 304);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(321, 74);
             this.textBox10.TabIndex = 15;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(14, 419);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(144, 21);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "Student Address";
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox11.Location = new System.Drawing.Point(16, 291);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(321, 25);
-            this.textBox11.TabIndex = 13;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(19, 267);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(135, 21);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Student Phone ";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.BackColor = System.Drawing.Color.LightGray;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "Male ",
-            "female"});
-            this.comboBox6.Location = new System.Drawing.Point(16, 213);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(321, 24);
-            this.comboBox6.TabIndex = 11;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(19, 189);
+            this.label18.Location = new System.Drawing.Point(22, 278);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(142, 21);
+            this.label18.Size = new System.Drawing.Size(170, 21);
             this.label18.TabIndex = 10;
-            this.label18.Text = "Student Gender ";
+            this.label18.Text = "Department Details";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(19, 109);
+            this.label19.Location = new System.Drawing.Point(19, 192);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(130, 21);
+            this.label19.Size = new System.Drawing.Size(163, 21);
             this.label19.TabIndex = 8;
-            this.label19.Text = "Student Name ";
+            this.label19.Text = "Department Name ";
             // 
             // textBox12
             // 
             this.textBox12.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox12.Location = new System.Drawing.Point(16, 144);
+            this.textBox12.Location = new System.Drawing.Point(16, 216);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(321, 25);
@@ -682,7 +582,7 @@ namespace student_managment_system
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1211, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(1185, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -712,12 +612,12 @@ namespace student_managment_system
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(478, 46);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(476, 46);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(781, 705);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(766, 713);
             this.guna2DataGridView1.TabIndex = 11;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -765,7 +665,6 @@ namespace student_managment_system
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(437, 705);
             this.panel3.TabIndex = 10;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox3
             // 
@@ -940,46 +839,54 @@ namespace student_managment_system
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 11);
+            this.label1.Location = new System.Drawing.Point(68, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 37);
+            this.label1.Size = new System.Drawing.Size(335, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Students";
+            this.label1.Text = "Manage Departments";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // guna2Elipse1
+            // guna2Elipse4
             // 
-            this.guna2Elipse1.BorderRadius = 14;
-            this.guna2Elipse1.TargetControl = this.button1;
+            this.guna2Elipse4.BorderRadius = 14;
+            this.guna2Elipse4.TargetControl = this;
             // 
-            // guna2Elipse2
+            // panel8
             // 
-            this.guna2Elipse2.BorderRadius = 14;
-            this.guna2Elipse2.TargetControl = this.button2;
+            this.panel8.BackColor = System.Drawing.Color.LightGray;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.label24);
+            this.panel8.Controls.Add(this.pictureBox9);
+            this.panel8.Location = new System.Drawing.Point(12, 692);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(268, 43);
+            this.panel8.TabIndex = 33;
             // 
-            // guna2Elipse3
+            // panel9
             // 
-            this.guna2Elipse3.BorderRadius = 14;
-            this.guna2Elipse3.TargetControl = this.button3;
+            this.panel9.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel9.Location = new System.Drawing.Point(250, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(18, 47);
+            this.panel9.TabIndex = 25;
             // 
-            // students
+            // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1906, 764);
+            this.ClientSize = new System.Drawing.Size(1920, 817);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "students";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "students";
+            this.Name = "Departments";
+            this.Text = "Departments";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -994,6 +901,8 @@ namespace student_managment_system
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1001,47 +910,29 @@ namespace student_managment_system
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
@@ -1058,19 +949,31 @@ namespace student_managment_system
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
     }
 }
