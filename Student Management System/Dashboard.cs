@@ -96,5 +96,10 @@ namespace student_managment_system
         {
 
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

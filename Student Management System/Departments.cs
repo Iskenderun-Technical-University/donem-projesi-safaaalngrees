@@ -51,5 +51,10 @@ namespace student_managment_system
         {
 
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
