@@ -56,5 +56,10 @@ namespace student_managment_system
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
