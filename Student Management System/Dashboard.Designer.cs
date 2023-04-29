@@ -206,7 +206,6 @@ namespace student_managment_system
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(268, 43);
             this.panel8.TabIndex = 33;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // panel9
             // 
@@ -302,7 +301,6 @@ namespace student_managment_system
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1269, 817);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox11
             // 
@@ -337,7 +335,6 @@ namespace student_managment_system
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1144, 359);
             this.panel3.TabIndex = 28;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label13
             // 
@@ -361,7 +358,6 @@ namespace student_managment_system
             this.label12.Size = new System.Drawing.Size(445, 18);
             this.label12.TabIndex = 36;
             this.label12.Text = "This Department module helps Manage all The departments ";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -429,7 +425,6 @@ namespace student_managment_system
             this.label7.Size = new System.Drawing.Size(150, 21);
             this.label7.TabIndex = 30;
             this.label7.Text = "Students Module";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox12
             // 
@@ -464,7 +459,6 @@ namespace student_managment_system
             this.label5.Size = new System.Drawing.Size(382, 18);
             this.label5.TabIndex = 27;
             this.label5.Text = "Represents Analytical Summary Of the information ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -487,7 +481,6 @@ namespace student_managment_system
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 25;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // panel4
             // 
@@ -520,7 +513,6 @@ namespace student_managment_system
             this.label3.Size = new System.Drawing.Size(60, 22);
             this.label3.TabIndex = 26;
             this.label3.Text = " Num";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel15
             // 
@@ -565,7 +557,6 @@ namespace student_managment_system
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(375, 97);
             this.panel12.TabIndex = 26;
-            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
             // label2
             // 
@@ -577,7 +568,6 @@ namespace student_managment_system
             this.label2.Size = new System.Drawing.Size(60, 22);
             this.label2.TabIndex = 27;
             this.label2.Text = " Num";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel13
             // 
@@ -610,7 +600,6 @@ namespace student_managment_system
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(373, 100);
             this.panel6.TabIndex = 25;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // label18
             // 
@@ -622,7 +611,6 @@ namespace student_managment_system
             this.label18.Size = new System.Drawing.Size(60, 22);
             this.label18.TabIndex = 25;
             this.label18.Text = " Num";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // panel7
             // 
@@ -633,7 +621,6 @@ namespace student_managment_system
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(96, 148);
             this.panel7.TabIndex = 24;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // pictureBox2
             // 
@@ -667,7 +654,6 @@ namespace student_managment_system
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(440, 110);
             this.panel5.TabIndex = 24;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // pictureBox7
             // 

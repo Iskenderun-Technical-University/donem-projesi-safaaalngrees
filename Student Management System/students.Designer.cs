@@ -107,7 +107,6 @@ namespace student_managment_system
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1556, 817);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel8
             // 
@@ -163,7 +162,6 @@ namespace student_managment_system
             this.label23.Size = new System.Drawing.Size(98, 21);
             this.label23.TabIndex = 30;
             this.label23.Text = "Dashboard";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // pictureBox8
             // 
@@ -176,7 +174,6 @@ namespace student_managment_system
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 29;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // label22
             // 
@@ -200,7 +197,6 @@ namespace student_managment_system
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 27;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // panel6
             // 
@@ -222,7 +218,6 @@ namespace student_managment_system
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(19, 38);
             this.panel7.TabIndex = 25;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // pictureBox6
             // 
@@ -246,7 +241,6 @@ namespace student_managment_system
             this.label21.Size = new System.Drawing.Size(79, 21);
             this.label21.TabIndex = 27;
             this.label21.Text = "Student ";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label20
             // 
@@ -283,7 +277,6 @@ namespace student_managment_system
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1269, 817);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
             // panel5
             // 
@@ -552,7 +545,6 @@ namespace student_managment_system
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // label1
             // 

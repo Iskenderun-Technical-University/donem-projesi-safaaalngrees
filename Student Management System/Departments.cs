@@ -15,51 +15,36 @@ namespace student_managment_system
         public Departments()
         {
             InitializeComponent();
+            showDepartments();
+        }
+        private void showDepartments()
+        {
+            string Query = "select * from DepartmentTb1";
+            Departmentslist.DataSource = Functions.GetData(Query);
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
+        private void AddBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
+            if (DepNameTb.Text == "" || DetailsTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!");
+            }
+            else
+            {
+                try
+                {
+                    string DName = DepNameTb.Text;
+                    string Details = DetailsTb.Text;
+                    string Query = "insert into DepartmentTb1 values ('{0}','{1}')";
+                    Query = string.Format(Query, DName, Details);
+                    Functions.SetData(Query);
+                    MessageBox.Show("Departmen Added |||");
+                }
+                catch
+                {
+                    throw;
+                }
+            }
         }
     }
 }

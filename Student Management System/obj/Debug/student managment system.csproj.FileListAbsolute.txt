@@ -40,4 +40,5 @@ C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management S
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student managment system.csproj.CopyComplete
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student managment system.exe
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student managment system.pdb
-C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student managment system.csproj.SuggestedBindingRedirects.cache
+C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\bin\Debug\Database1.mdf
+C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\bin\Debug\Database1_log.ldf
