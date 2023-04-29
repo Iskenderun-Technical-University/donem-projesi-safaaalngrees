@@ -23,7 +23,7 @@ namespace student_managment_system
             sda.Fill(dt);
             return dt;
         }
-        public static int SetData(string Query)
+        public static int SetData(string Query, Dictionary<string, object> Parameters)
         {
             int Cnt = 0;
             if (con.State == ConnectionState.Closed)

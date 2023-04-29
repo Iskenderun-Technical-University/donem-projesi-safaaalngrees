@@ -31,7 +31,6 @@ C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management S
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\bin\Debug\Guna.UI2.dll
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student managment system.csproj.AssemblyReference.cache
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_managment_system.Dashboard.resources
-C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_managment_system.Departments.resources
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_managment_system.Form1.resources
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_managment_system.Properties.Resources.resources
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_managment_system.students.resources
@@ -42,3 +41,4 @@ C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management S
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student managment system.pdb
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\bin\Debug\Database1.mdf
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\bin\Debug\Database1_log.ldf
+C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_management_system.Departments.resources

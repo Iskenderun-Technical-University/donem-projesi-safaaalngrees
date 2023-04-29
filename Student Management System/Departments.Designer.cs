@@ -1,5 +1,5 @@
 ﻿
-namespace student_managment_system
+namespace student_management_system
 {
     partial class Departments
     {
@@ -100,6 +100,7 @@ namespace student_managment_system
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -300,9 +301,9 @@ namespace student_managment_system
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.Departmentslist);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Departmentslist);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(287, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -363,6 +364,7 @@ namespace student_managment_system
             this.UpdateBtn.TabIndex = 21;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // AddBtn
             // 
@@ -640,15 +642,16 @@ namespace student_managment_system
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.Departmentslist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Departmentslist.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightCoral;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Departmentslist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.Departmentslist.ColumnHeadersHeight = 4;
+            this.Departmentslist.ColumnHeadersHeight = 30;
             this.Departmentslist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -658,13 +661,13 @@ namespace student_managment_system
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.Departmentslist.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Departmentslist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Departmentslist.GridColor = System.Drawing.Color.Gray;
             this.Departmentslist.Location = new System.Drawing.Point(476, 46);
             this.Departmentslist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Departmentslist.Name = "Departmentslist";
             this.Departmentslist.RowHeadersVisible = false;
             this.Departmentslist.RowHeadersWidth = 51;
-            this.Departmentslist.RowTemplate.Height = 24;
+            this.Departmentslist.RowTemplate.Height = 29;
             this.Departmentslist.Size = new System.Drawing.Size(765, 713);
             this.Departmentslist.TabIndex = 11;
             this.Departmentslist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -672,20 +675,20 @@ namespace student_managment_system
             this.Departmentslist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.Departmentslist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.Departmentslist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.Departmentslist.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.Departmentslist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Departmentslist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Departmentslist.ThemeStyle.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Departmentslist.ThemeStyle.GridColor = System.Drawing.Color.Gray;
+            this.Departmentslist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.White;
             this.Departmentslist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.Departmentslist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Departmentslist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Departmentslist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.Departmentslist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.Departmentslist.ThemeStyle.HeaderStyle.Height = 4;
+            this.Departmentslist.ThemeStyle.HeaderStyle.Height = 30;
             this.Departmentslist.ThemeStyle.ReadOnly = false;
             this.Departmentslist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.Departmentslist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Departmentslist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Departmentslist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.Departmentslist.ThemeStyle.RowsStyle.Height = 24;
+            this.Departmentslist.ThemeStyle.RowsStyle.Height = 29;
             this.Departmentslist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Departmentslist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
@@ -923,6 +926,11 @@ namespace student_managment_system
             this.guna2Elipse4.BorderRadius = 14;
             this.guna2Elipse4.TargetControl = this;
             // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 15;
+            this.guna2Elipse5.TargetControl = this.Departmentslist;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1030,5 +1038,6 @@ namespace student_managment_system
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
     }
 }

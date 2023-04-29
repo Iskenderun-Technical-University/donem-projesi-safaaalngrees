@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using student_managment_system;
 
-namespace student_managment_system
+namespace student_management_system
 {
     public partial class Departments : Form
     {
@@ -17,10 +18,11 @@ namespace student_managment_system
             InitializeComponent();
             showDepartments();
         }
+
         private void showDepartments()
         {
-            string Query = "select * from DepartmentTb1";
-            Departmentslist.DataSource = Functions.GetData(Query);
+            string query = "SELECT * FROM DepartmentTb1";
+            Departmentslist.DataSource = Functions.GetData(query);
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
@@ -33,18 +35,69 @@ namespace student_managment_system
             {
                 try
                 {
-                    string DName = DepNameTb.Text;
-                    string Details = DetailsTb.Text;
-                    string Query = "insert into DepartmentTb1 values ('{0}','{1}')";
-                    Query = string.Format(Query, DName, Details);
-                    Functions.SetData(Query);
-                    MessageBox.Show("Departmen Added |||");
+                    string dName = DepNameTb.Text;
+                    string details = DetailsTb.Text;
+                    string query = "INSERT INTO DepartmentTb1 (DepName, DepDetails) VALUES (@DepName, @DepDetails)";
+                    var parameters = new Dictionary<string, object>()
+                    {
+                        { "@DepName", dName },
+                        { "@DepDetails", details }
+                    };
+                    Functions.SetData(query, parameters);
+                    showDepartments();
+                    MessageBox.Show("Department Added!!!");
                 }
-                catch
+                catch (Exception ex)
                 {
-                    throw;
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
+
+        private void Departmentslist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DepNameTb.Text = Departmentslist.SelectedRows[0].Cells[1].Value.ToString();
+            DetailsTb.Text = Departmentslist.SelectedRows[0].Cells[2].Value.ToString();
+            if (DepNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(Departmentslist.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            if (DepNameTb.Text == "" || DetailsTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!");
+            }
+            else
+            {
+                try
+                {
+                    string dName = DepNameTb.Text;
+                    string details = DetailsTb.Text;
+                    string query = "UPDATE DepartmentTb1 SET DepName = @DepName, DepDetails = @DepDetails WHERE DepId = @DepId";
+                    var parameters = new Dictionary<string, object>()
+                    {
+                        { "@DepName", dName },
+                        { "@DepDetails", details },
+                        { "@DepId", key }
+                    };
+                    Functions.SetData(query, parameters);
+                    showDepartments();
+                    MessageBox.Show("Department Updated!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private int key = 0;
     }
 }
