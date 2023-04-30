@@ -1,5 +1,5 @@
 ﻿
-namespace student_managment_system
+namespace student_management_system
 {
     partial class students
     {
@@ -52,28 +52,29 @@ namespace student_managment_system
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.StParentTb = new System.Windows.Forms.TextBox();
+            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.DepCb = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.StAddTb = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.StPhoneTb = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.GenCb = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.StNameTb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.Studentslist = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -86,7 +87,7 @@ namespace student_managment_system
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Studentslist)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -267,9 +268,9 @@ namespace student_managment_system
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.Studentslist);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.guna2DataGridView1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(287, 0);
@@ -282,21 +283,21 @@ namespace student_managment_system
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.textBox9);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.DeleteBtn);
+            this.panel5.Controls.Add(this.StParentTb);
+            this.panel5.Controls.Add(this.UpdateBtn);
+            this.panel5.Controls.Add(this.AddBtn);
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.comboBox5);
+            this.panel5.Controls.Add(this.DepCb);
             this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.textBox10);
+            this.panel5.Controls.Add(this.StAddTb);
             this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.textBox11);
+            this.panel5.Controls.Add(this.StPhoneTb);
             this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.comboBox6);
+            this.panel5.Controls.Add(this.GenCb);
             this.panel5.Controls.Add(this.label18);
             this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.textBox12);
+            this.panel5.Controls.Add(this.StNameTb);
             this.panel5.Location = new System.Drawing.Point(20, 46);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
@@ -314,54 +315,55 @@ namespace student_managment_system
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.LightCoral;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(127, 674);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(191, 34);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Delete ";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.Color.LightCoral;
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.Location = new System.Drawing.Point(127, 674);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(191, 34);
+            this.DeleteBtn.TabIndex = 22;
+            this.DeleteBtn.Text = "Delete ";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // textBox9
+            // StParentTb
             // 
-            this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox9.Location = new System.Drawing.Point(19, 364);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(380, 25);
-            this.textBox9.TabIndex = 19;
+            this.StParentTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.StParentTb.Location = new System.Drawing.Point(19, 364);
+            this.StParentTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StParentTb.Multiline = true;
+            this.StParentTb.Name = "StParentTb";
+            this.StParentTb.Size = new System.Drawing.Size(380, 25);
+            this.StParentTb.TabIndex = 19;
             // 
-            // button2
+            // UpdateBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkCyan;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(231, 635);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(191, 34);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpdateBtn.BackColor = System.Drawing.Color.DarkCyan;
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateBtn.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBtn.Location = new System.Drawing.Point(231, 635);
+            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(191, 34);
+            this.UpdateBtn.TabIndex = 21;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(23, 635);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 34);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddBtn.BackColor = System.Drawing.Color.DarkCyan;
+            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddBtn.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBtn.Location = new System.Drawing.Point(23, 635);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(191, 34);
+            this.AddBtn.TabIndex = 20;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // label14
             // 
@@ -374,15 +376,15 @@ namespace student_managment_system
             this.label14.TabIndex = 18;
             this.label14.Text = "Student Parent ";
             // 
-            // comboBox5
+            // DepCb
             // 
-            this.comboBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(19, 560);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(380, 24);
-            this.comboBox5.TabIndex = 17;
+            this.DepCb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.DepCb.FormattingEnabled = true;
+            this.DepCb.Location = new System.Drawing.Point(19, 560);
+            this.DepCb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DepCb.Name = "DepCb";
+            this.DepCb.Size = new System.Drawing.Size(380, 24);
+            this.DepCb.TabIndex = 17;
             // 
             // label15
             // 
@@ -395,15 +397,15 @@ namespace student_managment_system
             this.label15.TabIndex = 16;
             this.label15.Text = "Student Department";
             // 
-            // textBox10
+            // StAddTb
             // 
-            this.textBox10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox10.Location = new System.Drawing.Point(19, 443);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(380, 74);
-            this.textBox10.TabIndex = 15;
+            this.StAddTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.StAddTb.Location = new System.Drawing.Point(19, 443);
+            this.StAddTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StAddTb.Multiline = true;
+            this.StAddTb.Name = "StAddTb";
+            this.StAddTb.Size = new System.Drawing.Size(380, 74);
+            this.StAddTb.TabIndex = 15;
             // 
             // label16
             // 
@@ -416,15 +418,15 @@ namespace student_managment_system
             this.label16.TabIndex = 14;
             this.label16.Text = "Student Address";
             // 
-            // textBox11
+            // StPhoneTb
             // 
-            this.textBox11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox11.Location = new System.Drawing.Point(16, 290);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(380, 25);
-            this.textBox11.TabIndex = 13;
+            this.StPhoneTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.StPhoneTb.Location = new System.Drawing.Point(16, 290);
+            this.StPhoneTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StPhoneTb.Multiline = true;
+            this.StPhoneTb.Name = "StPhoneTb";
+            this.StPhoneTb.Size = new System.Drawing.Size(380, 25);
+            this.StPhoneTb.TabIndex = 13;
             // 
             // label17
             // 
@@ -437,18 +439,18 @@ namespace student_managment_system
             this.label17.TabIndex = 12;
             this.label17.Text = "Student Phone ";
             // 
-            // comboBox6
+            // GenCb
             // 
-            this.comboBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.GenCb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.GenCb.FormattingEnabled = true;
+            this.GenCb.Items.AddRange(new object[] {
             "Male ",
             "female"});
-            this.comboBox6.Location = new System.Drawing.Point(16, 213);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(380, 24);
-            this.comboBox6.TabIndex = 11;
+            this.GenCb.Location = new System.Drawing.Point(16, 213);
+            this.GenCb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GenCb.Name = "GenCb";
+            this.GenCb.Size = new System.Drawing.Size(380, 24);
+            this.GenCb.TabIndex = 11;
             // 
             // label18
             // 
@@ -472,15 +474,15 @@ namespace student_managment_system
             this.label19.TabIndex = 8;
             this.label19.Text = "Student Name ";
             // 
-            // textBox12
+            // StNameTb
             // 
-            this.textBox12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox12.Location = new System.Drawing.Point(16, 144);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(380, 25);
-            this.textBox12.TabIndex = 9;
+            this.StNameTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.StNameTb.Location = new System.Drawing.Point(16, 144);
+            this.StNameTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StNameTb.Multiline = true;
+            this.StNameTb.Name = "StNameTb";
+            this.StNameTb.Size = new System.Drawing.Size(380, 25);
+            this.StNameTb.TabIndex = 9;
             // 
             // pictureBox1
             // 
@@ -492,59 +494,6 @@ namespace student_managment_system
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
-            // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(477, 46);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(781, 758);
-            this.guna2DataGridView1.TabIndex = 11;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // label1
             // 
@@ -559,22 +508,81 @@ namespace student_managment_system
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 5;
-            this.guna2Elipse1.TargetControl = this.button1;
+            this.guna2Elipse1.TargetControl = this.AddBtn;
             // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 5;
-            this.guna2Elipse2.TargetControl = this.button2;
+            this.guna2Elipse2.TargetControl = this.UpdateBtn;
             // 
             // guna2Elipse3
             // 
             this.guna2Elipse3.BorderRadius = 5;
-            this.guna2Elipse3.TargetControl = this.button3;
+            this.guna2Elipse3.TargetControl = this.DeleteBtn;
             // 
             // guna2Elipse4
             // 
             this.guna2Elipse4.BorderRadius = 14;
             this.guna2Elipse4.TargetControl = this;
+            // 
+            // Studentslist
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Studentslist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Studentslist.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Studentslist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Studentslist.ColumnHeadersHeight = 30;
+            this.Studentslist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Studentslist.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Studentslist.GridColor = System.Drawing.Color.Gray;
+            this.Studentslist.Location = new System.Drawing.Point(478, 46);
+            this.Studentslist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Studentslist.Name = "Studentslist";
+            this.Studentslist.RowHeadersVisible = false;
+            this.Studentslist.RowHeadersWidth = 51;
+            this.Studentslist.RowTemplate.Height = 29;
+            this.Studentslist.Size = new System.Drawing.Size(765, 749);
+            this.Studentslist.TabIndex = 25;
+            this.Studentslist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Studentslist.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Studentslist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Studentslist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Studentslist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Studentslist.ThemeStyle.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Studentslist.ThemeStyle.GridColor = System.Drawing.Color.Gray;
+            this.Studentslist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.White;
+            this.Studentslist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Studentslist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Studentslist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Studentslist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Studentslist.ThemeStyle.HeaderStyle.Height = 30;
+            this.Studentslist.ThemeStyle.ReadOnly = false;
+            this.Studentslist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Studentslist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Studentslist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Studentslist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Studentslist.ThemeStyle.RowsStyle.Height = 29;
+            this.Studentslist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Studentslist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 15;
+            this.guna2Elipse5.TargetControl = this.Studentslist;
             // 
             // students
             // 
@@ -605,7 +613,7 @@ namespace student_managment_system
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Studentslist)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -615,28 +623,27 @@ namespace student_managment_system
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Button UpdateBtn;
+        private System.Windows.Forms.Button AddBtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox StParentTb;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox DepCb;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox StAddTb;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox StPhoneTb;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox GenCb;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox StNameTb;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel6;
@@ -652,5 +659,7 @@ namespace student_managment_system
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox pictureBox9;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Guna.UI2.WinForms.Guna2DataGridView Studentslist;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
     }
 }

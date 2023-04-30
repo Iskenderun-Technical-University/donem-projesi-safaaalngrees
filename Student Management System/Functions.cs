@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace student_managment_system
+namespace student_management_system
 {
-    public static class Functions
+    public class Functions
     {
         private static string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\Database1.mdf;Integrated Security=True";
         private static SqlCommand cmd= new SqlCommand();
@@ -23,7 +23,7 @@ namespace student_managment_system
             sda.Fill(dt);
             return dt;
         }
-        public static int SetData(string Query, Dictionary<string, object> Parameters)
+        public static int SetData(string Query)
         {
             int Cnt = 0;
             if (con.State == ConnectionState.Closed)

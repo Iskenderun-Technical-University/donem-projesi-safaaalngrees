@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using student_managment_system;
 
 namespace student_management_system
 {
     public partial class Departments : Form
     {
+        int key = 0;
+
         public Departments()
         {
             InitializeComponent();
@@ -21,8 +22,8 @@ namespace student_management_system
 
         private void showDepartments()
         {
-            string query = "SELECT * FROM DepartmentTb1";
-            Departmentslist.DataSource = Functions.GetData(query);
+            string Query = "select * from DepartmentTb1";
+            Departmentslist.DataSource = Functions.GetData(Query);
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
@@ -35,21 +36,17 @@ namespace student_management_system
             {
                 try
                 {
-                    string dName = DepNameTb.Text;
-                    string details = DetailsTb.Text;
-                    string query = "INSERT INTO DepartmentTb1 (DepName, DepDetails) VALUES (@DepName, @DepDetails)";
-                    var parameters = new Dictionary<string, object>()
-                    {
-                        { "@DepName", dName },
-                        { "@DepDetails", details }
-                    };
-                    Functions.SetData(query, parameters);
+                    string DName = DepNameTb.Text;
+                    string Details = DetailsTb.Text;
+                    string Query = "insert into DepartmentTb1 values ('{0}','{1}')";
+                    Query = string.Format(Query, DName, Details);
+                    Functions.SetData(Query);
                     showDepartments();
-                    MessageBox.Show("Department Added!!!");
+                    MessageBox.Show("Department Added !!!");
                 }
-                catch (Exception ex)
+                catch (Exception Ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(Ex.Message);
                 }
             }
         }
@@ -58,6 +55,7 @@ namespace student_management_system
         {
             DepNameTb.Text = Departmentslist.SelectedRows[0].Cells[1].Value.ToString();
             DetailsTb.Text = Departmentslist.SelectedRows[0].Cells[2].Value.ToString();
+
             if (DepNameTb.Text == "")
             {
                 key = 0;
@@ -78,26 +76,48 @@ namespace student_management_system
             {
                 try
                 {
-                    string dName = DepNameTb.Text;
-                    string details = DetailsTb.Text;
-                    string query = "UPDATE DepartmentTb1 SET DepName = @DepName, DepDetails = @DepDetails WHERE DepId = @DepId";
-                    var parameters = new Dictionary<string, object>()
-                    {
-                        { "@DepName", dName },
-                        { "@DepDetails", details },
-                        { "@DepId", key }
-                    };
-                    Functions.SetData(query, parameters);
+                    string DName = DepNameTb.Text;
+                    string Details = DetailsTb.Text;
+                    string Query = "Update  DepartmentTb1 set DepName = '{0}', DepDetails = '{1}' where DepId = {2}";
+                    Query = string.Format(Query, DName, Details, key);
+                    Functions.SetData(Query);
                     showDepartments();
-                    MessageBox.Show("Department Updated!!!");
+                    MessageBox.Show("Department Updated !!!");
                 }
-                catch (Exception ex)
+                catch (Exception Ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(Ex.Message);
                 }
             }
         }
 
-        private int key = 0;
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select the Department to Delete!!");
+            }
+            else
+            {
+                try
+                {
+                    string Query = "delete from DepartmentTb1 where DepId =" + key + "";
+                    Functions.SetData(Query);
+                    showDepartments();
+                    MessageBox.Show("Department Deleted !!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            DepNameTb.Text = "";
+            DetailsTb.Text = "";
+            key = 0;
+        }
     }
 }

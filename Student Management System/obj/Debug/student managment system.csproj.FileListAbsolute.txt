@@ -42,3 +42,4 @@ C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management S
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\bin\Debug\Database1.mdf
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\bin\Debug\Database1_log.ldf
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_management_system.Departments.resources
+C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_managment_system.Departments.resources

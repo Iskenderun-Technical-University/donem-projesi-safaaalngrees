@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace student_managment_system
+namespace student_management_system
 {
     public partial class Dashboard : Form
     {

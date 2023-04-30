@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using student_management_system;
 
-namespace student_managment_system
+namespace student_management_system
 {
     static class Program
     {
@@ -17,7 +16,7 @@ namespace student_managment_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Departments());
+            Application.Run(new students());
         }
     }
 }

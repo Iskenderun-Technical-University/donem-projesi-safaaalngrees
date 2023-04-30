@@ -1,5 +1,5 @@
 ﻿
-namespace student_managment_system
+namespace student_management_system
 {
     partial class Form1
     {
