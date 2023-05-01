@@ -57,11 +57,90 @@ namespace student_management_system
                     string Parent = StParentTb.Text;
                     string Address = StAddTb.Text;
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
-                    string Query = "insert into studentTb1 valuse('{0}','{1}','{2}','{3}','{4}','{5}')";
+                    string Query = "insert into StudentTb1 valuse('{0}','{1}','{2}','{3}','{4}','{5}')";
                     Query = string.Format(Query, TName, Gender,Phone,Parent,Address,Dep);
-                 
+                    con.SetData(Query);
                     showStudents();
                     MessageBox.Show("Student Added !!!");
+                    clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+        int key = 0;
+
+        private void Studentslist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           StNameTb.Text = Studentslist.SelectedRows[0].Cells[1].Value.ToString();
+           GenCb.SelectedItem = Studentslist.SelectedRows[0].Cells[2].Value.ToString();
+           StPhoneTb.Text = Studentslist.SelectedRows[0].Cells[3].Value.ToString();
+           StParentTb.Text = Studentslist.SelectedRows[0].Cells[4].Value.ToString();
+           StAddTb.Text = Studentslist.SelectedRows[0].Cells[5].Value.ToString();
+           DepCb.SelectedItem = Studentslist.SelectedRows[0].Cells[2].Value.ToString();
+            if (StNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(Studentslist.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            if (StNameTb.Text == "" || StPhoneTb.Text == "" || StParentTb.Text == "" || StAddTb.Text == "" || DepCb.SelectedIndex == -1 || GenCb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Data!!");
+            }
+            else
+            {
+                try
+                {
+                    string TName = StNameTb.Text;
+                    string Gender = GenCb.SelectedItem.ToString();
+                    string Phone = StPhoneTb.Text;
+                    string Parent = StParentTb.Text;
+                    string Address = StAddTb.Text;
+                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                    string Query = "Update StudentTb1 set StName = '{0}',StGen = '{1}',StPhone = '{2}',StParent = '{3}',StAdd = '{4}',StDepartment = {5} where StCode ={6}";
+                    Query = string.Format(Query, TName, Gender, Phone, Parent, Address, Dep);
+                    con.SetData(Query);
+                    showStudents();
+                    MessageBox.Show("Student Updated !!!");
+                    clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+         if(key == 0)
+            {
+                MessageBox.Show("Missing Data!!");
+            }
+            else
+            {
+                try
+                {
+                    string TName = StNameTb.Text;
+                    string Gender = GenCb.SelectedItem.ToString();
+                    string Phone = StPhoneTb.Text;
+                    string Parent = StParentTb.Text;
+                    string Address = StAddTb.Text;
+                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                    string Query = "Delete from StudentTb1 where StCode ={0}";
+                    Query = string.Format(Query, key);
+                    con.SetData(Query);
+                    showStudents();
+                    MessageBox.Show("Student Delete !!!");
                     clear();
                 }
                 catch (Exception Ex)
