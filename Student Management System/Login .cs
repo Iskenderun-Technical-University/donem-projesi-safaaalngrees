@@ -10,11 +10,29 @@ using System.Windows.Forms;
 
 namespace student_management_system
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
+        }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            if (UNameTb.Text == "" || PasswordTb.Text "")
+            {
+                MessageBox.Show("Missing Data!!!");
+            }else if (UNameTb.Text == "Admin" && PasswordTb.Text=="Password")
+            {
+                students Obj = new students();
+                Obj.Show();
+                this.Hide();
+            }else  
+            {
+                UNameTb.Text = "";
+                PasswordTb.Text = "";
+
+            }
         }
     }
 }

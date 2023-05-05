@@ -15,3 +15,4 @@ C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management S
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student management system.csproj.CopyComplete
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student management system.exe
 C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student management system.pdb
+C:\Users\Safaa Alngrees\Desktop\donem-projesi-safaaalngrees\Student Management System\obj\Debug\student_management_system.Login.resources

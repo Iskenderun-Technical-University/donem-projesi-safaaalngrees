@@ -1,7 +1,7 @@
 ﻿
 namespace student_management_system
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace student_management_system
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,13 +40,13 @@ namespace student_management_system
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PasswordTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label4 = new System.Windows.Forms.Label();
+            this.ResetBtn = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -153,14 +153,14 @@ namespace student_management_system
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox1
+            // UNameTb
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(363, 265);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 38);
-            this.textBox1.TabIndex = 5;
+            this.UNameTb.BackColor = System.Drawing.Color.White;
+            this.UNameTb.Location = new System.Drawing.Point(363, 265);
+            this.UNameTb.Multiline = true;
+            this.UNameTb.Name = "UNameTb";
+            this.UNameTb.Size = new System.Drawing.Size(321, 38);
+            this.UNameTb.TabIndex = 5;
             // 
             // label2
             // 
@@ -173,14 +173,14 @@ namespace student_management_system
             this.label2.TabIndex = 7;
             this.label2.Text = "User Name ";
             // 
-            // textBox3
+            // PasswordTb
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(363, 346);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(321, 38);
-            this.textBox3.TabIndex = 8;
+            this.PasswordTb.BackColor = System.Drawing.Color.White;
+            this.PasswordTb.Location = new System.Drawing.Point(363, 346);
+            this.PasswordTb.Multiline = true;
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(321, 38);
+            this.PasswordTb.TabIndex = 8;
             // 
             // label3
             // 
@@ -193,32 +193,33 @@ namespace student_management_system
             this.label3.TabIndex = 9;
             this.label3.Text = "Password ";
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(433, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 41);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Login ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LoginBtn.BackColor = System.Drawing.Color.DarkCyan;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.Location = new System.Drawing.Point(433, 413);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(172, 41);
+            this.LoginBtn.TabIndex = 10;
+            this.LoginBtn.Text = "Login ";
+            this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // guna2Elipse1
             // 
-            this.guna2Elipse1.TargetControl = this.button1;
+            this.guna2Elipse1.TargetControl = this.LoginBtn;
             // 
-            // label4
+            // ResetBtn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Constantia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(491, 480);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 21);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Reset";
+            this.ResetBtn.AutoSize = true;
+            this.ResetBtn.Font = new System.Drawing.Font("Constantia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetBtn.ForeColor = System.Drawing.Color.Black;
+            this.ResetBtn.Location = new System.Drawing.Point(491, 480);
+            this.ResetBtn.Name = "ResetBtn";
+            this.ResetBtn.Size = new System.Drawing.Size(55, 21);
+            this.ResetBtn.TabIndex = 11;
+            this.ResetBtn.Text = "Reset";
             // 
             // Form1
             // 
@@ -226,12 +227,12 @@ namespace student_management_system
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(937, 579);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ResetBtn);
+            this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.UNameTb);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -254,13 +255,13 @@ namespace student_management_system
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UNameTb;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox PasswordTb;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoginBtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label ResetBtn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
