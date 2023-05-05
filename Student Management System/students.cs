@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace student_management_system
 {
+    
     public partial class students : Form
     {
         Functions con;
@@ -43,7 +44,7 @@ namespace student_management_system
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            if (StNameTb.Text == "" || StPhoneTb.Text == "" ||StParentTb.Text == "" ||StAddTb.Text == "" || DepCb.SelectedIndex == -1 || GenCb.SelectedIndex == -1 )
+             if (StNameTb.Text == "" || StPhoneTb.Text == "" ||StParentTb.Text == "" ||StAddTb.Text == "" || DepCb.SelectedIndex == -1 || GenCb.SelectedIndex == -1 )
             {
                 MessageBox.Show("Missing Data!!");
             }
@@ -57,9 +58,9 @@ namespace student_management_system
                     string Parent = StParentTb.Text;
                     string Address = StAddTb.Text;
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
-                    string Query = "insert into StudentTb1 valuse('{0}','{1}','{2}','{3}','{4}','{5}')";
+                    string Query = "insert into StudentTb1 values ('{0}','{1}','{2}','{3}','{4}','{5}')";
                     Query = string.Format(Query, TName, Gender,Phone,Parent,Address,Dep);
-                    con.SetData(Query);
+                    Functions.SetData(Query);
                     showStudents();
                     MessageBox.Show("Student Added !!!");
                     clear();
@@ -80,6 +81,7 @@ namespace student_management_system
            StParentTb.Text = Studentslist.SelectedRows[0].Cells[4].Value.ToString();
            StAddTb.Text = Studentslist.SelectedRows[0].Cells[5].Value.ToString();
            DepCb.SelectedItem = Studentslist.SelectedRows[0].Cells[2].Value.ToString();
+
             if (StNameTb.Text == "")
             {
                 key = 0;
@@ -107,8 +109,8 @@ namespace student_management_system
                     string Address = StAddTb.Text;
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
                     string Query = "Update StudentTb1 set StName = '{0}',StGen = '{1}',StPhone = '{2}',StParent = '{3}',StAdd = '{4}',StDepartment = {5} where StCode ={6}";
-                    Query = string.Format(Query, TName, Gender, Phone, Parent, Address, Dep);
-                    con.SetData(Query);
+                    Query = string.Format(Query, TName, Gender, Phone, Parent, Address, Dep,key);
+                    Functions.SetData(Query);
                     showStudents();
                     MessageBox.Show("Student Updated !!!");
                     clear();
@@ -138,7 +140,7 @@ namespace student_management_system
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
                     string Query = "Delete from StudentTb1 where StCode ={0}";
                     Query = string.Format(Query, key);
-                    con.SetData(Query);
+                    Functions.SetData(Query);
                     showStudents();
                     MessageBox.Show("Student Delete !!!");
                     clear();
