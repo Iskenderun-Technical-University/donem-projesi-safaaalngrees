@@ -101,6 +101,7 @@ namespace student_management_system
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -287,7 +288,6 @@ namespace student_management_system
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel14);
             this.panel2.Controls.Add(this.panel12);
@@ -305,7 +305,7 @@ namespace student_management_system
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(413, 228);
+            this.pictureBox11.Location = new System.Drawing.Point(3, 2);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(93, 100);
@@ -571,7 +571,8 @@ namespace student_management_system
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel13.Controls.Add(this.pictureBox11);
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
@@ -614,7 +615,7 @@ namespace student_management_system
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -625,7 +626,7 @@ namespace student_management_system
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, -34);
+            this.pictureBox2.Location = new System.Drawing.Point(3, -36);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(93, 172);
@@ -740,6 +741,7 @@ namespace student_management_system
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel13.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
