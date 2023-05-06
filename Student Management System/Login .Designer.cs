@@ -179,6 +179,7 @@ namespace student_management_system
             this.PasswordTb.Location = new System.Drawing.Point(363, 346);
             this.PasswordTb.Multiline = true;
             this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '.';
             this.PasswordTb.Size = new System.Drawing.Size(321, 38);
             this.PasswordTb.TabIndex = 8;
             // 

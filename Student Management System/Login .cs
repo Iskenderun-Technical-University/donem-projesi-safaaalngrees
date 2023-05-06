@@ -19,7 +19,7 @@ namespace student_management_system
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (UNameTb.Text == "" || PasswordTb.Text "")
+            if (UNameTb.Text == "" || PasswordTb.Text == "")
             {
                 MessageBox.Show("Missing Data!!!");
             }else if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
@@ -29,6 +29,7 @@ namespace student_management_system
                 this.Hide();
             }else  
             {
+                MessageBox.Show("Wronge User Or Password!!!");
                 UNameTb.Text = "";
                 PasswordTb.Text = "";
 
