@@ -140,6 +140,7 @@ namespace student_management_system
             this.label24.Size = new System.Drawing.Size(78, 24);
             this.label24.TabIndex = 32;
             this.label24.Text = "Logout";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // pictureBox9
             // 
@@ -187,7 +188,6 @@ namespace student_management_system
             this.DepIb1.Size = new System.Drawing.Size(116, 21);
             this.DepIb1.TabIndex = 28;
             this.DepIb1.Text = "Departments";
-          
             // 
             // pictureBox7
             // 

@@ -119,5 +119,26 @@ namespace student_management_system
             DetailsTb.Text = "";
             key = 0;
         }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+            Login  Obj = new Login();
+            Obj.Show();
+            this.Close();
+        }
+
+        private void StudentLb1_Click(object sender, EventArgs e)
+        {
+            students Obj = new students();
+            Obj.Show();
+            this.Close();
+        }
+
+        private void Dashboard_Click(object sender, EventArgs e)
+        {
+          Dashboard Obj = new Dashboard();
+            Obj.Show();
+            this.Close();
+        }
     }
 }

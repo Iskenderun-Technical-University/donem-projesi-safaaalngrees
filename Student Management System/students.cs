@@ -165,5 +165,12 @@ namespace student_management_system
             Obj.Show();
             this.Close();
         }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+          Login Obj = new Login();
+            Obj.Show();
+            this.Close();
+        }
     }
 }
