@@ -48,5 +48,12 @@ namespace student_management_system
             Obj.Show();
             this.Close();
         }
+
+        private void DepLb1_Click(object sender, EventArgs e)
+        {
+            Departments Obj = new Departments();
+            Obj.Show();
+            this.Close();
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace student_management_system
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.DepLb1 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -114,7 +114,7 @@ namespace student_management_system
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.DepLb1);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.pictureBox6);
@@ -173,16 +173,17 @@ namespace student_management_system
             this.label23.TabIndex = 30;
             this.label23.Text = "Dashboard";
             // 
-            // label14
+            // DepLb1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(108, 273);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(116, 21);
-            this.label14.TabIndex = 28;
-            this.label14.Text = "Departments";
+            this.DepLb1.AutoSize = true;
+            this.DepLb1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepLb1.ForeColor = System.Drawing.Color.Black;
+            this.DepLb1.Location = new System.Drawing.Point(108, 273);
+            this.DepLb1.Name = "DepLb1";
+            this.DepLb1.Size = new System.Drawing.Size(116, 21);
+            this.DepLb1.TabIndex = 28;
+            this.DepLb1.Text = "Departments";
+            this.DepLb1.Click += new System.EventHandler(this.DepLb1_Click);
             // 
             // pictureBox10
             // 
@@ -773,7 +774,7 @@ namespace student_management_system
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label DepLb1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
