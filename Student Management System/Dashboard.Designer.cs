@@ -43,7 +43,7 @@ namespace student_management_system
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
+            this.StudentLb1 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -118,7 +118,7 @@ namespace student_management_system
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.StudentLb1);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.panel2);
@@ -252,16 +252,17 @@ namespace student_management_system
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
             // 
-            // label21
+            // StudentLb1
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(108, 193);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(83, 21);
-            this.label21.TabIndex = 27;
-            this.label21.Text = "Students";
+            this.StudentLb1.AutoSize = true;
+            this.StudentLb1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentLb1.ForeColor = System.Drawing.Color.Black;
+            this.StudentLb1.Location = new System.Drawing.Point(108, 193);
+            this.StudentLb1.Name = "StudentLb1";
+            this.StudentLb1.Size = new System.Drawing.Size(83, 21);
+            this.StudentLb1.TabIndex = 27;
+            this.StudentLb1.Text = "Students";
+            this.StudentLb1.Click += new System.EventHandler(this.StudentLb1_Click);
             // 
             // label20
             // 
@@ -765,7 +766,7 @@ namespace student_management_system
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label StudentLb1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label20;

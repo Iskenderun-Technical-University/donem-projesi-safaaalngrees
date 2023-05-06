@@ -244,6 +244,7 @@ namespace student_management_system
             this.label21.Size = new System.Drawing.Size(79, 21);
             this.label21.TabIndex = 27;
             this.label21.Text = "Student ";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label20
             // 

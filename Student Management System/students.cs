@@ -172,5 +172,10 @@ namespace student_management_system
             Obj.Show();
             this.Close();
         }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

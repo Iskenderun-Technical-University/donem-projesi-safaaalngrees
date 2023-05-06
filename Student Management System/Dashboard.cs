@@ -41,5 +41,12 @@ namespace student_management_system
         {
 
         }
+
+        private void StudentLb1_Click(object sender, EventArgs e)
+        {
+        students Obj = new students();
+            Obj.Show();
+            this.Close();
+        }
     }
 }
