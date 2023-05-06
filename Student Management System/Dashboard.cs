@@ -16,5 +16,15 @@ namespace student_management_system
         {
             InitializeComponent();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

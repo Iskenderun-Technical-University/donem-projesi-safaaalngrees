@@ -654,17 +654,19 @@ namespace student_management_system
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(440, 110);
             this.panel5.TabIndex = 24;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(-3, 0);
+            this.pictureBox7.Location = new System.Drawing.Point(0, -32);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(96, 116);
+            this.pictureBox7.Size = new System.Drawing.Size(96, 169);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // label19
             // 
