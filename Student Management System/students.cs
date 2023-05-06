@@ -151,5 +151,19 @@ namespace student_management_system
                 }
             }
         }
+
+        private void DepLb1_Click(object sender, EventArgs e)
+        {
+            Departments Obj = new Departments();
+            Obj.Show();
+            this.Close();
+        }
+
+        private void DashboardLb1_Click(object sender, EventArgs e)
+        {
+            Dashboard Obj = new Dashboard();
+            Obj.Show();
+            this.Close();
+        }
     }
 }

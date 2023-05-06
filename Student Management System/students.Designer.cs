@@ -31,17 +31,17 @@ namespace student_management_system
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(students));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.DashboardLb1 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.DepIb1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -94,9 +94,9 @@ namespace student_management_system
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.DashboardLb1);
             this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.DepIb1);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label20);
@@ -153,16 +153,17 @@ namespace student_management_system
             this.pictureBox9.TabIndex = 31;
             this.pictureBox9.TabStop = false;
             // 
-            // label23
+            // DashboardLb1
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(104, 324);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(98, 21);
-            this.label23.TabIndex = 30;
-            this.label23.Text = "Dashboard";
+            this.DashboardLb1.AutoSize = true;
+            this.DashboardLb1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardLb1.ForeColor = System.Drawing.Color.Black;
+            this.DashboardLb1.Location = new System.Drawing.Point(104, 324);
+            this.DashboardLb1.Name = "DashboardLb1";
+            this.DashboardLb1.Size = new System.Drawing.Size(98, 21);
+            this.DashboardLb1.TabIndex = 30;
+            this.DashboardLb1.Text = "Dashboard";
+            this.DashboardLb1.Click += new System.EventHandler(this.DashboardLb1_Click);
             // 
             // pictureBox8
             // 
@@ -176,16 +177,17 @@ namespace student_management_system
             this.pictureBox8.TabIndex = 29;
             this.pictureBox8.TabStop = false;
             // 
-            // label22
+            // DepIb1
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(104, 262);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(116, 21);
-            this.label22.TabIndex = 28;
-            this.label22.Text = "Departments";
+            this.DepIb1.AutoSize = true;
+            this.DepIb1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepIb1.ForeColor = System.Drawing.Color.Black;
+            this.DepIb1.Location = new System.Drawing.Point(104, 262);
+            this.DepIb1.Name = "DepIb1";
+            this.DepIb1.Size = new System.Drawing.Size(116, 21);
+            this.DepIb1.TabIndex = 28;
+            this.DepIb1.Text = "Departments";
+          
             // 
             // pictureBox7
             // 
@@ -281,27 +283,27 @@ namespace student_management_system
             // 
             // Studentslist
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.Studentslist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Studentslist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Studentslist.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Studentslist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Studentslist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Studentslist.ColumnHeadersHeight = 30;
             this.Studentslist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Studentslist.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Studentslist.DefaultCellStyle = dataGridViewCellStyle3;
             this.Studentslist.GridColor = System.Drawing.Color.Gray;
             this.Studentslist.Location = new System.Drawing.Point(478, 46);
             this.Studentslist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -652,10 +654,10 @@ namespace student_management_system
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label DepIb1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label DashboardLb1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
