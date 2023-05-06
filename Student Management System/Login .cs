@@ -22,7 +22,7 @@ namespace student_management_system
             if (UNameTb.Text == "" || PasswordTb.Text "")
             {
                 MessageBox.Show("Missing Data!!!");
-            }else if (UNameTb.Text == "Admin" && PasswordTb.Text=="Password")
+            }else if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
             {
                 students Obj = new students();
                 Obj.Show();
