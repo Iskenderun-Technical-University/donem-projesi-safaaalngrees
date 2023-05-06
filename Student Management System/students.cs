@@ -177,5 +177,12 @@ namespace student_management_system
         {
 
         }
+
+        private void DepIb1_Click(object sender, EventArgs e)
+        {
+            Departments Obj = new Departments();
+            Obj.Show();
+            this.Close();
+        }
     }
 }

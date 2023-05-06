@@ -37,7 +37,6 @@ namespace student_management_system
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.CloseBtn = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.UNameTb = new System.Windows.Forms.TextBox();
@@ -48,7 +47,6 @@ namespace student_management_system
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ResetBtn = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,10 +118,6 @@ namespace student_management_system
             this.label5.TabIndex = 8;
             this.label5.Text = "Manage Students ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CloseBtn
-            // 
-           
             // 
             // label1
             // 
@@ -229,15 +223,12 @@ namespace student_management_system
             this.Controls.Add(this.UNameTb);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-          
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,7 +238,6 @@ namespace student_management_system
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox CloseBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox UNameTb;

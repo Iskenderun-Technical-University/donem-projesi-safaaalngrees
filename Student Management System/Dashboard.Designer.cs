@@ -63,17 +63,17 @@ namespace student_management_system
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.MaleStudLb1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.DepNumLb1 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.StudNumLb1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -228,6 +228,7 @@ namespace student_management_system
             this.label24.Size = new System.Drawing.Size(78, 24);
             this.label24.TabIndex = 32;
             this.label24.Text = "Logout";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // pictureBox9
             // 
@@ -486,7 +487,7 @@ namespace student_management_system
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.label3);
+            this.panel14.Controls.Add(this.MaleStudLb1);
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.label17);
             this.panel14.Location = new System.Drawing.Point(804, 228);
@@ -495,16 +496,16 @@ namespace student_management_system
             this.panel14.Size = new System.Drawing.Size(369, 97);
             this.panel14.TabIndex = 27;
             // 
-            // label3
+            // MaleStudLb1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(125, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 22);
-            this.label3.TabIndex = 26;
-            this.label3.Text = " Num";
+            this.MaleStudLb1.AutoSize = true;
+            this.MaleStudLb1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaleStudLb1.ForeColor = System.Drawing.Color.Black;
+            this.MaleStudLb1.Location = new System.Drawing.Point(125, 58);
+            this.MaleStudLb1.Name = "MaleStudLb1";
+            this.MaleStudLb1.Size = new System.Drawing.Size(60, 22);
+            this.MaleStudLb1.TabIndex = 26;
+            this.MaleStudLb1.Text = " Num";
             // 
             // panel15
             // 
@@ -542,7 +543,7 @@ namespace student_management_system
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.label2);
+            this.panel12.Controls.Add(this.DepNumLb1);
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.label16);
             this.panel12.Location = new System.Drawing.Point(413, 228);
@@ -551,16 +552,16 @@ namespace student_management_system
             this.panel12.Size = new System.Drawing.Size(375, 97);
             this.panel12.TabIndex = 26;
             // 
-            // label2
+            // DepNumLb1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(125, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 22);
-            this.label2.TabIndex = 27;
-            this.label2.Text = " Num";
+            this.DepNumLb1.AutoSize = true;
+            this.DepNumLb1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepNumLb1.ForeColor = System.Drawing.Color.Black;
+            this.DepNumLb1.Location = new System.Drawing.Point(125, 58);
+            this.DepNumLb1.Name = "DepNumLb1";
+            this.DepNumLb1.Size = new System.Drawing.Size(60, 22);
+            this.DepNumLb1.TabIndex = 27;
+            this.DepNumLb1.Text = " Num";
             // 
             // panel13
             // 
@@ -597,7 +598,7 @@ namespace student_management_system
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.StudNumLb1);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.label15);
             this.panel6.Location = new System.Drawing.Point(27, 228);
@@ -606,16 +607,17 @@ namespace student_management_system
             this.panel6.Size = new System.Drawing.Size(373, 100);
             this.panel6.TabIndex = 25;
             // 
-            // label18
+            // StudNumLb1
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(125, 62);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 22);
-            this.label18.TabIndex = 25;
-            this.label18.Text = " Num";
+            this.StudNumLb1.AutoSize = true;
+            this.StudNumLb1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudNumLb1.ForeColor = System.Drawing.Color.Black;
+            this.StudNumLb1.Location = new System.Drawing.Point(125, 62);
+            this.StudNumLb1.Name = "StudNumLb1";
+            this.StudNumLb1.Size = new System.Drawing.Size(60, 22);
+            this.StudNumLb1.TabIndex = 25;
+            this.StudNumLb1.Text = " Num";
+            this.StudNumLb1.Click += new System.EventHandler(this.StudNumLb1_Click);
             // 
             // panel7
             // 
@@ -720,6 +722,7 @@ namespace student_management_system
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -780,16 +783,16 @@ namespace student_management_system
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label MaleStudLb1;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label DepNumLb1;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label StudNumLb1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel5;

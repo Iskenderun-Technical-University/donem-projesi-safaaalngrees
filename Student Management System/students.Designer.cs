@@ -188,6 +188,7 @@ namespace student_management_system
             this.DepIb1.Size = new System.Drawing.Size(116, 21);
             this.DepIb1.TabIndex = 28;
             this.DepIb1.Text = "Departments";
+            this.DepIb1.Click += new System.EventHandler(this.DepIb1_Click);
             // 
             // pictureBox7
             // 
