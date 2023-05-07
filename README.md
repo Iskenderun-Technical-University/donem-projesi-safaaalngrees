@@ -1,5 +1,8 @@
 # Student Management System
 
+## veri taban semasi
+![veri taban-semasi](./veri taban-semasi.png)
+
 ## neden boyle bir proje yapmak istedim
  Bu projeyi secme nedeni ilk olarak ogrenci oldugum icin ve ögrenciler için 
  faaliyetlerini kolaylastirmak ve daha sistematik planli bir sekilde gerceklestirmektir
