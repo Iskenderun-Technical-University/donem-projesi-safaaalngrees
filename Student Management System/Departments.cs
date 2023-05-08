@@ -140,5 +140,10 @@ namespace student_management_system
             Obj.Show();
             this.Close();
         }
+
+        private void DeleteBtn_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

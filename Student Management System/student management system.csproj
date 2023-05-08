@@ -138,6 +138,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\ExitIcon1.png" />
     <None Include="Resources\ExitIcon.png" />
   </ItemGroup>
   <ItemGroup>
