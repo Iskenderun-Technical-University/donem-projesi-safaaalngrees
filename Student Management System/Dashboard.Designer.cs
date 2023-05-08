@@ -80,9 +80,9 @@ namespace student_management_system
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -291,12 +291,12 @@ namespace student_management_system
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel14);
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(287, 0);
@@ -687,18 +687,6 @@ namespace student_management_system
             this.label19.TabIndex = 8;
             this.label19.Text = "Summary  Of Application";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1185, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -713,6 +701,17 @@ namespace student_management_system
             // 
             this.guna2Elipse4.BorderRadius = 14;
             this.guna2Elipse4.TargetControl = this;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::student_management_system.Properties.Resources.ExitIcon1;
+            this.pictureBox1.Location = new System.Drawing.Point(1124, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // Dashboard
             // 
@@ -798,7 +797,6 @@ namespace student_management_system
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -817,5 +815,6 @@ namespace student_management_system
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
