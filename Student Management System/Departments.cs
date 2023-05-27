@@ -51,21 +51,6 @@ namespace student_management_system
             }
         }
 
-        private void Departmentslist_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DepNameTb.Text = Departmentslist.SelectedRows[0].Cells[1].Value.ToString();
-            DetailsTb.Text = Departmentslist.SelectedRows[0].Cells[2].Value.ToString();
-
-            if (DepNameTb.Text == "")
-            {
-                key = 0;
-            }
-            else
-            {
-                key = Convert.ToInt32(Departmentslist.SelectedRows[0].Cells[0].Value.ToString());
-            }
-        }
-
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
             if (DepNameTb.Text == "" || DetailsTb.Text == "")
@@ -91,25 +76,17 @@ namespace student_management_system
             }
         }
 
-        private void DeleteBtn_Click(object sender, EventArgs e)
+        private void Departmentslist_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if (key == 0)
+            DepNameTb.Text = Departmentslist.SelectedRows[0].Cells[1].Value.ToString();
+            DetailsTb.Text = Departmentslist.SelectedRows[0].Cells[2].Value.ToString();
+            if (DepNameTb.Text == "")
             {
-                MessageBox.Show("Select the Department to Delete!!");
+                key = 0;
             }
             else
             {
-                try
-                {
-                    string Query = "delete from DepartmentTb1 where DepId =" + key + "";
-                    Functions.SetData(Query);
-                    showDepartments();
-                    MessageBox.Show("Department Deleted !!");
-                }
-                catch (Exception Ex)
-                {
-                    MessageBox.Show(Ex.Message);
-                }
+                key = Convert.ToInt32(Departmentslist.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 
