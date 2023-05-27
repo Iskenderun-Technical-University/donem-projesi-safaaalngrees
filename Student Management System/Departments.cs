@@ -122,7 +122,7 @@ namespace student_management_system
 
         private void label24_Click(object sender, EventArgs e)
         {
-            Login  Obj = new Login();
+            Login Obj = new Login();
             Obj.Show();
             this.Close();
         }
@@ -136,19 +136,35 @@ namespace student_management_system
 
         private void Dashboard_Click(object sender, EventArgs e)
         {
-          Dashboard Obj = new Dashboard();
+            Dashboard Obj = new Dashboard();
             Obj.Show();
             this.Close();
         }
 
         private void DeleteBtn_Click_1(object sender, EventArgs e)
         {
+            if (key == 0)
+            {
+                MessageBox.Show("Select the Department to Delete!!");
+            }
+            else
+            {
+                try
+                {
+                    string Query = "delete from DepartmentTb1 where DepId =" + key + "";
+                    Functions.SetData(Query);
+                    showDepartments();
+                    MessageBox.Show("Department Deleted !!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            }
 
         }
     }
 }
+       
+  
